@@ -11,6 +11,7 @@ frontend:
     preBuild:
       commands:
         - yarn install
+        - export NODE_OPTIONS=--openssl-legacy-provider
     build:
       commands:
         - REACT_APP_CONNECT_REGION=${REACT_APP_CONNECT_REGION}
